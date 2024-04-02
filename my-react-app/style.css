@@ -1,0 +1,111 @@
+body {
+    font-family: 'Lato', sans-serif;;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #E7E7E7;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    text-align: right;
+    position: relative;
+}
+
+header .logo {
+    position: absolute; /* Position the logo absolutely within the header */
+    left: 30px; /* Adjust as needed */
+    width: 60px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    clip: rect(0px, 60px, 50px, 0px);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #767676;
+}
+
+.background h1:first-of-type {
+    color: #fff;
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+    animation: fadeIn1 2s ease-in-out forwards;
+}
+
+.background h1:nth-of-type(2) {
+    color: #fff;
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+    animation: fadeIn2 2.5s ease-in-out forwards;
+}
+
+.background h1:nth-of-type(3) {
+    color: #fff;
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+    animation: fadeIn3 3s ease-in-out forwards;
+}
+
+.background {
+    padding: 0px;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 35vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-top: 100px; /* Full viewport height */
+    padding-bottom: 100px;
+}
+  
+.content {
+    font-size: 18px;
+    text-align: center; /* Center content horizontally */
+    width: 700px;
+}
+
+@keyframes fadeIn1 {
+    0% { opacity: 0; }
+    25% { opacity: 0; }
+    50% { opacity: 0.8;}
+    100% { opacity: 1; }
+}
+
+@keyframes fadeIn2 {
+    0% { opacity: 0; }
+    50% { opacity: 0;}
+    75% { opacity: 0.8;}
+    100% { opacity: 1; }
+}
+
+@keyframes fadeIn3 {
+    0% { opacity: 0; }
+    50% { opacity: 0;}
+    75% { opacity: 0;}
+    87.5% {opacity: 0.8;}
+    100% { opacity: 1; }
+}
