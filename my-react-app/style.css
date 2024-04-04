@@ -44,7 +44,7 @@ nav ul li a:hover {
 
 .background h1:first-of-type {
     color: #fff;
-    font-size: 40px;
+    font-size: 50px;
     padding: 0px;
     margin: 0px;
     animation: fadeIn1 2s ease-in-out forwards;
@@ -52,7 +52,7 @@ nav ul li a:hover {
 
 .background h1:nth-of-type(2) {
     color: #fff;
-    font-size: 40px;
+    font-size: 50px;
     padding: 0px;
     margin: 0px;
     animation: fadeIn2 2.5s ease-in-out forwards;
@@ -60,7 +60,7 @@ nav ul li a:hover {
 
 .background h1:nth-of-type(3) {
     color: #fff;
-    font-size: 40px;
+    font-size: 50px;
     padding: 0px;
     margin: 0px;
     animation: fadeIn3 3s ease-in-out forwards;
@@ -72,6 +72,8 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     padding: 35vh;
+    background-attachment: fixed; /* Background stays fixed while scrolling */
+    animation: moveBackground 2.5s linear; 
 }
 
 .container {
@@ -79,7 +81,7 @@ nav ul li a:hover {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     padding-top: 100px; /* Full viewport height */
-    padding-bottom: 100px;
+    text-align: center;
 }
   
 .content {
@@ -87,6 +89,143 @@ nav ul li a:hover {
     text-align: center; /* Center content horizontally */
     width: 700px;
 }
+
+/* ----Embeded Video---- */
+
+.favorite {
+    color: #71A1DA;
+    font-size: 18px;
+    text-align: left; /* Center content horizontally */
+    width: 1200px;
+}
+
+.video-wrapper {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.video-description {
+    display: inline-block;
+    vertical-align: top; /* Align elements to the top */
+}
+
+.video-description:first-child {
+    margin-right: 60px; /* Apply margin only to the first .video-description */
+}
+
+
+.video-description h2 {
+    font-weight: 500;
+}
+
+.video-description p {
+    color: #454545;
+}
+
+/* ----Show---- */
+/* First Picture */
+
+.show {
+    color: #71A1DA;
+    font-size: 18px;
+    text-align: left; /* Center content horizontally */
+    width: 1200px;
+}
+
+
+.img-description {
+    margin-top: 50px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align items with space between */
+    align-items: top; /* Center items vertically */
+}
+
+.text-container {
+    width: calc(100% - 700px); /* Adjust the width based on image width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+}
+
+.img-description h1 {
+    color: black;
+    margin: 0;
+    text-align: left;
+    font-weight: 500; /* Add bold font weight */
+}
+
+.img-description img {
+    width: 500px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.text-container p {
+    color: #454545;
+    text-align: left;
+}
+
+/* ----HIRE---- */
+.hire img {
+    width: 400px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.hire {
+    color: #71A1DA;
+    font-size: 18px;
+    text-align: left; /* Center content horizontally */
+    width: 1200px;
+}
+
+.hire-us {
+    display: inline-block;
+}
+
+.highlight{
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #71A1DA;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 10px; /* Adjust border-radius for roundness */
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+    border: none;
+}
+
+.highlight:hover {
+    transform: scale(1.2); /* Shrink the button slightly on click */
+}
+
+.highlight:active {
+    background-color: #2f7ad5;
+}
+
+
+/* ----FOOTER---- */
+footer {
+    margin-top: 50px;
+    background-color: #333; /* Background color of the footer */
+    color: #fff; /* Text color */
+    padding: 20px 0; /* Top and bottom padding */
+    text-align: center; /* Align text to center */
+}
+
+.footer-content {
+    max-width: 960px; /* Maximum width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.footer-content p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Optionally, you can style links in the footer */
+.footer-content a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
 
 @keyframes fadeIn1 {
     0% { opacity: 0; }
@@ -108,4 +247,13 @@ nav ul li a:hover {
     75% { opacity: 0;}
     87.5% {opacity: 0.8;}
     100% { opacity: 1; }
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0; /* Start position */
+    }
+    100% {
+        background-position: 0 50%; /* End position */
+    }
 }
